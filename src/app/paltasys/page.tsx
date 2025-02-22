@@ -16,7 +16,7 @@ export default function PaltaSys() {
       </div>
       <HeroScrollDemo />
       <AnimatedTestimonialsDemo />
-      <FloatingDockDemo />
+      
       <Footer />
     </main>
   );

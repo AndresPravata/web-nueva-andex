@@ -13,7 +13,7 @@ export default function Totems() {
   
     <AppleCardsCarouselDemo />
     
-    <FloatingDockDemo></FloatingDockDemo>
+    
     <Footer />
   </main> );
 }
