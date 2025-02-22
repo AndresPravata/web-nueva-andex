@@ -4,25 +4,26 @@ import { Carousel } from "@/components/ui/carousel";
 export function CarouselDemo() {
   const slideData = [
     {
-      title: "Soluciones de Hardware",
+      title: "Sistema de ventas",
       button: "Conocer más",
-      src: "/images/hardware.jpg",
+      src: "/product1.png",
     },
     {
-      title: "Software Personalizado",
+      title: "Totem Turnero",
       button: "Conocer más",
-      src: "/images/software.jpg",
+      src: "/product2.png",
     },
     {
-      title: "Inteligencia Artificial",
+      title: "Verdulería Autogestionable",
       button: "Conocer más",
-      src: "/images/ai.jpg",
+      src: "/product4.png",
     },
     {
-      title: "Servicios Cloud",
+      title: "Totem Publicitario",
       button: "Conocer más",
-      src: "/images/cloud.jpg",
+      src: "/product3.png",
     },
+    
   ];
   return (
     <div className="relative overflow-hidden w-full h-full py-20">
