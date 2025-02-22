@@ -31,7 +31,7 @@ function Navbar({ className }: { className?: string }) {
   return (
     <div className="fixed top-4 left-1/2 -translate-x-1/2 w-[98%] max-w-4xl h-16 bg-white/80 dark:bg-black/80 backdrop-blur-sm z-50 border border-gray-200 dark:border-neutral-800 rounded-3xl">
       <div className="h-full flex items-center justify-between px-6">
-        <Link href="#hero" className="flex-shrink-0">
+        <Link href="/" className="flex-shrink-0">
           <Image
             src="/isologo-andextech.png"
             alt="Andex Tech"
@@ -43,7 +43,7 @@ function Navbar({ className }: { className?: string }) {
 
         <nav className="hidden md:flex items-center gap-8">
           <Link
-            href="#hero"
+            href="/"
             className="text-neutral-600 dark:text-neutral-300 text-sm font-medium"
           >
             Inicio

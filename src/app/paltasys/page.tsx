@@ -6,14 +6,18 @@ import { Footer } from "@/components/features/footer";
 import { SpotlightPreview } from "@/components/features/spotlight";
 import { HeroScrollDemo } from "@/components/features/scroll";
 import { ExpandableCardDemo } from "@/components/features/pantallas-palta";
+import { AnimatedTestimonialsDemo } from "@/components/features/cards";
 
 export default function PaltaSys() {
   return (
     <main className="flex min-h-screen flex-col items-center">
-    <SpotlightPreview />
-    <HeroScrollDemo />
-    <ExpandableCardDemo />
-    <FloatingDockDemo></FloatingDockDemo>
-    <Footer />
-  </main> );
+      <div className="-mt-[65px]">
+        <SpotlightPreview />
+      </div>
+      <HeroScrollDemo />
+      <AnimatedTestimonialsDemo />
+      <FloatingDockDemo />
+      <Footer />
+    </main>
+  );
 }

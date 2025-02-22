@@ -206,9 +206,9 @@ export const CloseIcon = () => {
 
 const cards = [
   {
-    description: "Lana Del Rey",
-    title: "Summertime Sadness",
-    src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
+    description: "Trazabilizá tus ventas",
+    title: "Reporte de ventas",
+    src: "/foto1.png",
     ctaText: "Play",
     ctaLink: "https://ui.aceternity.com/templates",
     content: () => {

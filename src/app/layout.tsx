@@ -18,11 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
-      <body
-        className={`${inter.className} antialiased bg-background min-h-screen`}
-      >
+      <body className={`${inter.className} antialiased bg-background min-h-screen`}>
         <Providers>
-          <header className="h-[65px] z-50">
+          <header className="h-[65px] z-50 absolute w-full">
             <MainNavbar />
           </header>
           <main className="overflow-x-hidden">{children}</main>
