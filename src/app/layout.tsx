@@ -17,18 +17,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
-        className={`${inter.className} antialiased bg-background min-h-screen scroll-smooth`}
+        className={`${inter.className} antialiased bg-background min-h-screen`}
       >
         <Providers>
-          <header className="h-[65px]">
+          <header className="h-[65px] z-50">
             <MainNavbar />
           </header>
-          <main>{children}</main>
-          <footer>
-            
-          </footer>
+          <main className="overflow-x-hidden">{children}</main>
+          <footer></footer>
         </Providers>
       </body>
     </html>

@@ -5,10 +5,8 @@ const words = `Combinamos innovación en hardware, software e IA para crear tecn
 
 export function TextGenerateEffectDemo() {
   return (
-    <div className="max-w-4xl mx-auto px-4">
+    <div className="max-w-4xl">
       <TextGenerateEffect words={words} />
     </div>
   );
 }
-
-
