@@ -21,31 +21,29 @@ export function InfiniteMovingCardsDemo() {
 const testimonials = [
   {
     quote:
-      "“Andextech nos brindó una atención personalizada que logró adaptarse de inmediato a las particularidades de nuestra clínica. Su servicio postventa es excelente, es ágil y confiable, lo que hizo de la integración un éxito.”",
+      "Andextech nos brindó una atención personalizada que logró adaptarse de inmediato a las particularidades de nuestra clínica. Su servicio postventa es excelente, es ágil y confiable, lo que hizo de la integración un éxito.",
     name: "Dr. Juan Ignacio Luffi",
     title: "Veterinaria Dr. Luffi",
   },
   {
     quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
+      "Trabajan con profesionalismo, responsabilidad y calidad humana, lo que se refleja en la dedicación que le ponen a cada proyecto.",
+    name: "Ignacio Montoro",
+    title: "Dueño de Modestan",
   },
   {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+    quote: "Su sistema de gestión ha mejorado significativamente la eficiencia de nuestro negocio.",
+    name: "María González",
+    title: "Gerente Comercial",
   },
   {
-    quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+    quote: "La implementación fue rápida y el soporte técnico es excelente.",
+    name: "Carlos Rodríguez",
+    title: "Dueño de Local",
   },
   {
-    quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+    quote: "La solución se adaptó perfectamente a nuestras necesidades específicas.",
+    name: "Laura Martínez",
+    title: "Administradora",
   },
 ];

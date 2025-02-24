@@ -55,6 +55,7 @@ const config: Config = {
         },
       },
       colors: {
+        ...flattenColorPalette(colors),
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
