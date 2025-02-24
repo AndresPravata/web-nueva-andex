@@ -14,8 +14,8 @@ export default function Home() {
       {/* <TextGenerateEffectDemo></TextGenerateEffectDemo> */}
       <CoverDemo></CoverDemo>
       <CarouselDemo></CarouselDemo>
-      <InfiniteMovingCardsDemo></InfiniteMovingCardsDemo>
       <TimelineDemo></TimelineDemo>
+      <InfiniteMovingCardsDemo></InfiniteMovingCardsDemo>
       <Footer />
     </main>
   );

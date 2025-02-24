@@ -21,9 +21,9 @@ export function InfiniteMovingCardsDemo() {
 const testimonials = [
   {
     quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+      "“Andextech nos brindó una atención personalizada que logró adaptarse de inmediato a las particularidades de nuestra clínica. Su servicio postventa es excelente, es ágil y confiable, lo que hizo de la integración un éxito.”",
+    name: "Dr. Juan Ignacio Luffi",
+    title: "Veterinaria Dr. Luffi",
   },
   {
     quote:
