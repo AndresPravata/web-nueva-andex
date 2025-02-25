@@ -680,13 +680,13 @@ export function FeatureCarousel({
                 src={image.step1light1}
                 preset="slideInLeft"
               />
-              {/* <AnimatedStepImage
+              <AnimatedStepImage
                 alt={image.alt}
                 className={clsx(step1img2Class)}
                 src={image.step1light2}
                 preset="slideInRight"
                 delay={0.1}
-              /> */}
+              />
             </motion.div>
           );
         case 1:
@@ -710,13 +710,13 @@ export function FeatureCarousel({
                 src={image.step2light1}
                 preset="fadeInScale"
               />
-              {/* <AnimatedStepImage
+              <AnimatedStepImage
                 alt={image.alt}
                 className={clsx(step2img2Class, "rounded-2xl")}
                 src={image.step2light2}
                 preset="fadeInScale"
                 delay={0.1}
-              /> */}
+              />
             </motion.div>
           );
         case 2:
