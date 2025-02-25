@@ -7,6 +7,7 @@ import { InfiniteMovingCardsDemo } from "@/components/features/testimonios";
 import { TimelineDemo } from "@/components/features/sobrenosotros";
 import { Footer } from "@/components/features/footer";
 import { Products } from "@/components/features/products";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center">

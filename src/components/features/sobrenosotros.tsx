@@ -95,7 +95,8 @@ export function TimelineDemo() {
             Naves Argentina 2024.
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-2xl font-semibold mb-8">
-            Camara Joven de San Rafael - Programa de Gestión y Desarrollo de Habilidades Empresariales.
+            Camara Joven de San Rafael - Programa de Gestión y Desarrollo de
+            Habilidades Empresariales.
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
             Programas de capacitacion en negocios y emprendimiento.
@@ -147,8 +148,6 @@ export function TimelineDemo() {
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
               ✅ Finalistas en Emprender 2024 - Camara Joven de San Rafael.
             </div>
-
-            
           </div>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -185,7 +184,7 @@ export function TimelineDemo() {
     },
   ];
   return (
-    <div className="w-full">
+    <div className="w-full" id="sobrenosotros">
       <Timeline data={data} />
     </div>
   );

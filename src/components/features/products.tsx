@@ -9,7 +9,7 @@ const content = [
     description:
       "Gestiona tu negocio de manera eficiente con nuestro sistema de ventas inteligente. Incluye control de stock, reportes en tiempo real y análisis predictivo.",
     content: (
-        <div className="h-full w-full  flex items-center justify-center text-white">
+      <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
           src="/product1.png"
           width={400}
@@ -41,7 +41,7 @@ const content = [
     description:
       "Permite a los clientes gestionar su propia compra y pago. Ideal para restaurantes y bares.",
     content: (
-        <div className="h-full w-full  flex items-center justify-center text-white">
+      <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
           src="/product3.png"
           width={400}
@@ -57,7 +57,7 @@ const content = [
     description:
       "Permite a los clientes gestionar su propia compra y pago. Ideal para verdulerías y tiendas de alimentación.",
     content: (
-        <div className="h-full w-full  flex items-center justify-center text-white">
+      <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
           src="/product4.png"
           width={400}
@@ -68,7 +68,6 @@ const content = [
       </div>
     ),
   },
-  
 ];
 export function Products() {
   return (

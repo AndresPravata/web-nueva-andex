@@ -32,7 +32,7 @@ export function AnimatedTestimonialsDemo() {
     },
     {
       quote:
-        "Facil y rapido de usar, podes registrar ventas, cierre de caja, metodos de pago, y maás. Todo desde un solo lugar.",
+        "Facil y rapido de usar, podes registrar ventas, cierre de caja, metodos de pago, y más. Todo desde un solo lugar.",
       name: "Punto de venta",
       designation: "Intuitivo y sencillo",
       src: "/punto.png",

@@ -5,10 +5,7 @@ import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
 export function InfiniteMovingCardsDemo() {
   return (
-    <div
-      className="h-[20rem] rounded-md flex flex-col antialiased  dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden my-20"
-      id="sobrenosotros"
-    >
+    <div className="h-[20rem] rounded-md flex flex-col antialiased  dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden my-20">
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
@@ -32,7 +29,8 @@ const testimonials = [
     title: "Dueño de Modestan",
   },
   {
-    quote: "Su sistema de gestión ha mejorado significativamente la eficiencia de nuestro negocio.",
+    quote:
+      "Su sistema de gestión ha mejorado significativamente la eficiencia de nuestro negocio.",
     name: "María González",
     title: "Gerente Comercial",
   },
@@ -42,7 +40,8 @@ const testimonials = [
     title: "Dueño de Local",
   },
   {
-    quote: "La solución se adaptó perfectamente a nuestras necesidades específicas.",
+    quote:
+      "La solución se adaptó perfectamente a nuestras necesidades específicas.",
     name: "Laura Martínez",
     title: "Administradora",
   },

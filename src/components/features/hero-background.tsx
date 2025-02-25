@@ -32,7 +32,7 @@ export function FlipWordsDemo() {
 
 export function BackgroundGradientAnimationDemo() {
   return (
-    <BackgroundBeamsWithCollision className="mt-[-65px] min-h-screen">
+    <BackgroundBeamsWithCollision className=" min-h-screen">
       <div className="absolute z-10 inset-0 flex items-center pointer-events-none">
         <FlipWordsDemo />
       </div>

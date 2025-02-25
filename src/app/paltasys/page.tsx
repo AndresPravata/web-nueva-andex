@@ -11,12 +11,12 @@ import { AnimatedTestimonialsDemo } from "@/components/features/cards";
 export default function PaltaSys() {
   return (
     <main className="flex min-h-screen flex-col items-center">
-      <div className="-mt-[65px]">
+      <div className="mt-14 md:-mt-[65px]">
         <SpotlightPreview />
       </div>
       <HeroScrollDemo />
       <AnimatedTestimonialsDemo />
-      
+
       <Footer />
     </main>
   );

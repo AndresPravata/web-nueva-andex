@@ -1,7 +1,7 @@
 "use client";
 
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useAnimation, PanInfo } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -11,6 +11,7 @@ type Testimonial = {
   designation: string;
   src: string;
 };
+
 export const AnimatedTestimonials = ({
   testimonials,
   autoplay = false,
@@ -19,6 +20,8 @@ export const AnimatedTestimonials = ({
   autoplay?: boolean;
 }) => {
   const [active, setActive] = useState(0);
+  const controls = useAnimation();
+  const [dragStart, setDragStart] = useState(0);
 
   const handleNext = () => {
     setActive((prev) => (prev + 1) % testimonials.length);
@@ -26,6 +29,23 @@ export const AnimatedTestimonials = ({
 
   const handlePrev = () => {
     setActive((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
+
+  const handleDragStart = (event: any, info: PanInfo) => {
+    setDragStart(info.point.x);
+  };
+
+  const handleDragEnd = (event: any, info: PanInfo) => {
+    const dragDistance = info.point.x - dragStart;
+    const dragThreshold = 50; // Minimum distance to trigger slide
+
+    if (Math.abs(dragDistance) > dragThreshold) {
+      if (dragDistance > 0) {
+        handlePrev();
+      } else {
+        handleNext();
+      }
+    }
   };
 
   const isActive = (index: number) => {
@@ -42,11 +62,19 @@ export const AnimatedTestimonials = ({
   const randomRotateY = () => {
     return Math.floor(Math.random() * 21) - 10;
   };
+
   return (
     <div className="max-w-sm md:max-w-4xl mx-auto antialiased font-sans px-4 md:px-8 lg:px-12 py-20">
-      <div className="relative grid grid-cols-1 md:grid-cols-2  gap-20">
-        <div>
-          <div className="relative h-80 w-full">
+      <div className="relative grid grid-cols-1 md:grid-cols-2 gap-20">
+        <motion.div
+          className="relative h-80 w-full cursor-grab active:cursor-grabbing"
+          drag="x"
+          dragConstraints={{ left: 0, right: 0 }}
+          onDragStart={handleDragStart}
+          onDragEnd={handleDragEnd}
+          whileTap={{ cursor: "grabbing" }}
+        >
+          <div className="relative h-full w-full">
             <AnimatePresence>
               {testimonials.map((testimonial, index) => (
                 <motion.div
@@ -85,13 +113,14 @@ export const AnimatedTestimonials = ({
                     width={500}
                     height={500}
                     draggable={false}
-                    className="h-full w-full rounded-3xl object-cover object-center"
+                    className="h-full w-full rounded-3xl object-cover object-center select-none"
                   />
                 </motion.div>
               ))}
             </AnimatePresence>
           </div>
-        </div>
+        </motion.div>
+
         <div className="flex justify-between flex-col py-4">
           <motion.div
             key={active}
