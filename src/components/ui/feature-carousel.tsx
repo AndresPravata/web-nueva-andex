@@ -741,13 +741,24 @@ export function FeatureCarousel({
            * - Triggers animation complete callback
            */
           return (
-            <AnimatedStepImage
-              alt={image.alt}
-              className={clsx(step3imgClass, "rounded-2xl")}
-              src={image.step3light}
-              preset="fadeInScale"
+            <motion.div
+              className="relative w-full h-full"
               onAnimationComplete={handleAnimationComplete}
-            />
+            >
+              <AnimatedStepImage
+                alt={image.alt}
+                className={clsx(step3imgClass, "rounded-2xl")}
+                src={image.step3light}
+                preset="fadeInScale"
+              />
+              <AnimatedStepImage
+                alt={image.alt}
+                className={clsx(step1img2Class, "rounded-2xl")}
+                src={image.step3light}
+                preset="fadeInScale"
+                delay={0.1}
+              />
+            </motion.div>
           );
         case 3:
           /**
@@ -762,12 +773,17 @@ export function FeatureCarousel({
           return (
             <motion.div
               className="relative w-full h-full"
-              {...ANIMATION_PRESETS.fadeInScale}
               onAnimationComplete={handleAnimationComplete}
             >
               <AnimatedStepImage
                 alt={image.alt}
                 className={clsx(step4imgClass)}
+                src={image.step4light}
+                preset="fadeInScale"
+              />
+              <AnimatedStepImage
+                alt={image.alt}
+                className={clsx(step2img2Class)}
                 src={image.step4light}
                 preset="fadeInScale"
                 delay={0.1}

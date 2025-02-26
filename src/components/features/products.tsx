@@ -103,12 +103,14 @@ export function Products() {
               "md:group-hover:-translate-y-6"
             )}
             step3imgClass={cn(
-              "pointer-events-none w-[80%] md:w-[60%] border border-stone-100/10 dark:border-stone-700 rounded-t-[24px] transition-all duration-500 overflow-hidden",
-              "left-[0%] top-[6%] md:top-[-10%] md:left-[40%]"
+              "pointer-events-none w-[80%] md:w-[50%] border border-stone-100/10 transition-all duration-500 dark:border-stone-700/50",
+              "max-md:scale-[160%] max-md:rounded-[24px] rounded-[24px] left-[0%] top-[8%] md:left-[35px] md:top-[8%]",
+              "md:group-hover:translate-y-2"
             )}
             step4imgClass={cn(
-              "pointer-events-none w-[75%] md:w-[50%] border border-stone-100/10 dark:border-stone-700 rounded-[24px] transition-all duration-500 overflow-hidden",
-              "left-[0%] top-[4%] md:top-[-10%] md:left-[50%]"
+              "pointer-events-none w-[80%] md:w-[50%] border border-stone-100/10 transition-all duration-500 dark:border-stone-700/50",
+              "max-md:scale-[160%] max-md:rounded-[24px] rounded-[24px] left-[0%] top-[8%] md:left-[35px] md:top-[8%]",
+              "md:group-hover:translate-y-2"
             )}
             // Example images
             image={{
@@ -125,7 +127,7 @@ export function Products() {
           />
         </div>
       </div>
-      <div className="flex gap-2 mt-4">
+      <div className="flex gap-2 mt-4 md:flex-row flex-col">
         <Link href="/paltasys">
           <button className="relative inline-flex items-center justify-center px-8 py-2.5 overflow-hidden tracking-tighter text-white bg-black rounded-md group">
             <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-yellow-600 rounded-full group-hover:w-56 group-hover:h-56" />
@@ -136,7 +138,7 @@ export function Products() {
                 viewBox="0 0 487 487"
               >
                 <path
-                  fillOpacity=".1"
+                  fillOpacity=".04"
                   fillRule="nonzero"
                   fill="#FFF"
                   d="M0 .3c67 2.1 134.1 4.3 186.3 37 52.2 32.7 89.6 95.8 112.8 150.6 23.2 54.8 32.3 101.4 61.2 149.9 28.9 48.4 77.7 98.8 126.4 149.2H0V.3z"
@@ -150,7 +152,7 @@ export function Products() {
                 viewBox="0 0 487 487"
               >
                 <path
-                  fillOpacity=".1"
+                  fillOpacity=".04"
                   fillRule="nonzero"
                   fill="#FFF"
                   d="M487 486.7c-66.1-3.6-132.3-7.3-186.3-37s-95.9-85.3-126.2-137.2c-30.4-51.8-49.3-99.9-76.5-151.4C70.9 109.6 35.6 54.8.3 0H487v486.7z"
@@ -173,7 +175,7 @@ export function Products() {
                 viewBox="0 0 487 487"
               >
                 <path
-                  fillOpacity=".1"
+                  fillOpacity=".04"
                   fillRule="nonzero"
                   fill="#FFF"
                   d="M0 .3c67 2.1 134.1 4.3 186.3 37 52.2 32.7 89.6 95.8 112.8 150.6 23.2 54.8 32.3 101.4 61.2 149.9 28.9 48.4 77.7 98.8 126.4 149.2H0V.3z"
@@ -187,7 +189,7 @@ export function Products() {
                 viewBox="0 0 487 487"
               >
                 <path
-                  fillOpacity=".1"
+                  fillOpacity=".04"
                   fillRule="nonzero"
                   fill="#FFF"
                   d="M487 486.7c-66.1-3.6-132.3-7.3-186.3-37s-95.9-85.3-126.2-137.2c-30.4-51.8-49.3-99.9-76.5-151.4C70.9 109.6 35.6 54.8.3 0H487v486.7z"
