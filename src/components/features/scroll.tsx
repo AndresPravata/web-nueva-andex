@@ -19,7 +19,7 @@ export function HeroScrollDemo() {
         }
       >
         <Image
-          src={`/foto1.png`}
+          src={`/foto1.PNG`}
           alt="hero"
           height={720}
           width={1400}
