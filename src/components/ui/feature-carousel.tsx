@@ -252,7 +252,7 @@ interface AnimatedStepImageProps extends StepImageProps {
  */
 function useNumberCycler(
   totalSteps: number = TOTAL_STEPS,
-  interval: number = 10000
+  interval: number = 100000
 ) {
   const [currentNumber, setCurrentNumber] = useState(0);
   const [isManualInteraction, setIsManualInteraction] = useState(false);
@@ -523,13 +523,12 @@ function Steps({
   onChange: (index: number) => void;
 }) {
   return (
-    <nav aria-label="Progress" className="flex justify-center px-4">
+    <nav aria-label="Progress" className="flex justify-center w-full px-4">
       <ol
-        className="flex w-full flex-wrap items-start justify-start gap-2 sm:justify-center md:w-10/12 md:divide-y-0"
+        className="flex items-center justify-center gap-4 md:gap-6"
         role="list"
       >
         {steps.map((step, stepIdx) => {
-          // Calculate step states for styling and animations
           const isCompleted = current > stepIdx;
           const isCurrent = current === stepIdx;
           const isFuture = !isCompleted && !isCurrent;
@@ -542,7 +541,7 @@ function Steps({
               variants={stepVariants}
               transition={{ duration: 0.3 }}
               className={cn(
-                "relative z-50 rounded-full px-3 py-1 transition-all duration-300 ease-in-out md:flex",
+                "relative z-50 rounded-full px-2 py-1 transition-all duration-300 ease-in-out",
                 isCompleted ? "bg-neutral-500/20" : "bg-neutral-500/10"
               )}
             >
@@ -595,7 +594,7 @@ function Steps({
                     initial={{ opacity: 0, x: -10 }}
                     animate={{ opacity: 1, x: 0 }}
                     className={clsx(
-                      "text-sm font-medium duration-300",
+                      "text-sm font-medium duration-300 max-md:hidden",
                       isCompleted && "text-muted-foreground",
                       isCurrent && "text-lime-300 dark:text-yellow-500",
                       isFuture && "text-neutral-500"
@@ -800,12 +799,12 @@ export function FeatureCarousel({
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2 }}
-        className="absolute left-[12rem] top-5 z-50 h-full w-full cursor-pointer md:left-0"
+        className="absolute left-0 right-0 top-5 z-50 flex justify-center"
       >
         <Steps current={step} onChange={() => {}} steps={steps} />
       </motion.div>
       <motion.div
-        className="absolute right-0 top-0 z-50 h-full w-full cursor-pointer md:left-0"
+        className="absolute right-0 top-0 z-50 h-full w-full cursor-pointer"
         onClick={handleIncrement}
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
