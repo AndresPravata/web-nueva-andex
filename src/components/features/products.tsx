@@ -25,7 +25,7 @@ const content = [
     ),
   },
   {
-    title: "Totem Turnero",
+    title: "Tótem Turnero",
     description:
       "Optimiza la gestión de turnos y reduce los tiempos de espera. Ideal para bancos, clínicas y oficinas públicas.",
     content: (
@@ -41,7 +41,7 @@ const content = [
     ),
   },
   {
-    title: "Totem Gastronómico",
+    title: "Tótem Gastronómico",
     description:
       "Permite a los clientes gestionar su propia compra y pago. Ideal para restaurantes y bares.",
     content: (
@@ -129,9 +129,9 @@ export function Products() {
               step2light1: "/turnero1.png",
               step2light2: "/product2.png",
               step3light: "/gastronomico.jpg",
-              step3light2: "/gastronomico.jpg",
-              step4light: "/verduleria.png",
-              step4light2: "/totem-verduleria.png",
+              step3light2: "/gastronomico2.jpg",
+              step4light: "/verduleria1.jpg",
+              step4light2: "/verduleria2.jpg",
               alt: "Feature demonstration",
             }}
             // Card styling
@@ -210,7 +210,7 @@ export function Products() {
             </span>
             <span className="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent to-gray-200" />
             <span className="relative text-base font-semibold flex items-center gap-2">
-              Totems
+              Tótems
               <ArrowUpRight className="w-6 h-6" />
             </span>
           </button>

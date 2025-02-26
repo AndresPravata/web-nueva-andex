@@ -93,7 +93,7 @@ function Navbar({ className }: { className?: string }) {
             href="/totems"
             className="text-neutral-600 dark:text-neutral-300 text-sm font-medium"
           >
-            Totems
+            Tótems
           </Link>
           <Link
             href="/#sobrenosotros"

@@ -52,7 +52,7 @@ export function TimelineDemo() {
             Incubadora UNCUYO - Programa de Pre-Aceleración.
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Programa de capacitacion en negocios y emprendimiento.
+            Programa de capacitación en negocios y emprendimiento.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -95,11 +95,11 @@ export function TimelineDemo() {
             Naves Argentina 2024.
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-2xl font-semibold mb-8">
-            Camara Joven de San Rafael - Programa de Gestión y Desarrollo de
+            Cámara Joven de San Rafael - Programa de Gestión y Desarrollo de
             Habilidades Empresariales.
           </p>
           <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Programas de capacitacion en negocios y emprendimiento.
+            Programas de capacitación en negocios y emprendimiento.
           </p>
           <div className="grid grid-cols-2 gap-4">
             <Image
@@ -146,7 +146,7 @@ export function TimelineDemo() {
               ✅ Finalistas en Naves Argentina 2024.
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Finalistas en Emprender 2024 - Camara Joven de San Rafael.
+              ✅ Finalistas en Emprender 2024 - Cámara Joven de San Rafael.
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4">

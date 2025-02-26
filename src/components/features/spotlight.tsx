@@ -14,7 +14,7 @@ export function SpotlightPreview() {
           Crecé con datos <br /> inteligentes.
         </h1>
         <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
-          Aprovecha las recomendaciones basadas en IA para tomar decisiones
+          Aprovechá las recomendaciones basadas en IA para tomar decisiones
           estratégicas y maximizar tus ganancias.
         </p>
       </div>

@@ -180,15 +180,15 @@ const steps = [
   },
   {
     id: "2",
-    name: "Totem Turnero",
-    title: "Totem Turnero",
+    name: "Tótem Turnero",
+    title: "Tótem Turnero",
     description:
       "Optimiza la gestión de turnos y reduce los tiempos de espera. Ideal para bancos, clínicas y oficinas públicas.",
   },
   {
     id: "3",
-    name: "Totem Gastronómico",
-    title: "Totem Gastronómico",
+    name: "Tótem Gastronómico",
+    title: "Tótem Gastronómico",
     description:
       "Permite a los clientes gestionar su propia compra y pago. Ideal para restaurantes y bares.",
   },

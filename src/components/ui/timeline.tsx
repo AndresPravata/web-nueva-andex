@@ -42,7 +42,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           Nuestra historia
         </h2>
         <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          Conoce nuestra historia y cómo llegamos a ser lo que somos hoy.
+          Conocé nuestra historia y cómo llegamos a ser lo que somos hoy.
         </p>
       </div>
 
