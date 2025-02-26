@@ -88,7 +88,7 @@ export function Products() {
               "md:group-hover:translate-y-2"
             )}
             step1img2Class={cn(
-              "pointer-events-none hidden md:block w-[60%] border border-stone-100/10 dark:border-stone-700/50 transition-all duration-500 overflow-hidden",
+              "pointer-events-none hidden md:block w-[45%] border border-stone-100/10 dark:border-stone-700/50 transition-all duration-500 overflow-hidden",
               "max-md:scale-[160%] rounded-2xl max-md:rounded-[24px] left-[69%] top-[53%] md:top-[7%] md:left-[calc(50%+35px+1rem)]",
               "md:group-hover:-translate-y-6"
             )}
@@ -108,7 +108,7 @@ export function Products() {
               "md:group-hover:translate-y-2"
             )}
             step3img2Class={cn(
-              "pointer-events-none hidden md:block w-[60%] border border-stone-100/10 dark:border-stone-700/50 transition-all duration-500 overflow-hidden",
+              "pointer-events-none hidden md:block w-[40%] border border-stone-100/10 dark:border-stone-700/50 transition-all duration-500 overflow-hidden",
               "max-md:scale-[160%] rounded-2xl max-md:rounded-[24px] left-[69%] top-[53%] md:top-[7%] md:left-[calc(50%+35px+1rem)]",
               "md:group-hover:-translate-y-6"
             )}
