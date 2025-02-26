@@ -40,7 +40,7 @@ export function Footer() {
       id="contacto"
     >
       <div className="max-w-7xl mx-auto px-4 flex flex-col items-center gap-6">
-        <p className="text-2xl text-neutral-500 dark:text-neutral-100 font-bold">
+        <p className="text-4xl text-neutral-500 dark:text-neutral-100 font-bold">
           Contactanos
         </p>
         <FloatingDock items={links} />
