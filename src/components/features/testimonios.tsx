@@ -30,9 +30,9 @@ const testimonials = [
   },
   {
     quote:
-      "Su sistema de gestión ha mejorado significativamente la eficiencia de nuestro negocio.",
-    name: "María González",
-    title: "Gerente Comercial",
+      "Tuve el privilegio de acompañar a los fundadores de Andextech en su etapa de gestación, donde contruyeron una empresa basada en valores y profesionalismo. Andextech se distingue por su inquebrantable compromiso con la excelencia, con una mirada siempre puesta en la innovación, orientada a satisfacer las necesidades específicas de cada cliente, integrando responsabilidad y creatividad en cada proyecto.",
+    name: "Juan Pablo Bustos",
+    title: "Profesor de la UNCUYO",
   },
   {
     quote: "La implementación fue rápida y el soporte técnico es excelente.",
