@@ -66,7 +66,9 @@ interface ImageSet {
   step2light2: StaticImageData | string;
   step3dark?: StaticImageData | string;
   step3light: StaticImageData | string;
+  step3light2: StaticImageData | string;
   step4light: StaticImageData | string;
+  step4light2: StaticImageData | string;
   alt: string;
 }
 
@@ -76,7 +78,9 @@ interface FeatureCarouselProps extends CardProps {
   step2img1Class?: string;
   step2img2Class?: string;
   step3imgClass?: string;
+  step3img2Class?: string;
   step4imgClass?: string;
+  step4img2Class?: string;
   image: ImageSet;
 }
 
@@ -252,7 +256,7 @@ interface AnimatedStepImageProps extends StepImageProps {
  */
 function useNumberCycler(
   totalSteps: number = TOTAL_STEPS,
-  interval: number = 10000
+  interval: number = 100000
 ) {
   const [currentNumber, setCurrentNumber] = useState(0);
   const [isManualInteraction, setIsManualInteraction] = useState(false);
@@ -623,8 +627,12 @@ const defaultClasses = {
     "pointer-events-none w-[40%] border border-border-100/10 dark:border-border-700 transition-all duration-500 rounded-2xl overflow-hidden",
   step3img:
     "pointer-events-none w-[90%] border border-border-100/10 dark:border-border-700 rounded-2xl transition-all duration-500 overflow-hidden",
+  step3img2:
+    "pointer-events-none w-[60%] border border-border-100/10 dark:border-border-700 transition-all duration-500 rounded-2xl overflow-hidden",
   step4img:
     "pointer-events-none w-[90%] border border-border-100/10 dark:border-border-700 rounded-2xl transition-all duration-500 overflow-hidden",
+  step4img2:
+    "pointer-events-none w-[40%] border border-border-100/10 dark:border-border-700 transition-all duration-500 rounded-2xl overflow-hidden",
 } as const;
 
 /**
@@ -639,7 +647,9 @@ export function FeatureCarousel({
   step2img1Class = defaultClasses.step2img1,
   step2img2Class = defaultClasses.step2img2,
   step3imgClass = defaultClasses.step3img,
+  step3img2Class = defaultClasses.step3img2,
   step4imgClass = defaultClasses.step4img,
+  step4img2Class = defaultClasses.step4img2,
   ...props
 }: FeatureCarouselProps) {
   const { currentNumber: step, increment } = useNumberCycler();
@@ -753,8 +763,8 @@ export function FeatureCarousel({
               />
               <AnimatedStepImage
                 alt={image.alt}
-                className={clsx(step1img2Class, "rounded-2xl")}
-                src={image.step3light}
+                className={clsx(step3img2Class, "rounded-2xl")}
+                src={image.step3light2}
                 preset="fadeInScale"
                 delay={0.1}
               />
@@ -783,8 +793,8 @@ export function FeatureCarousel({
               />
               <AnimatedStepImage
                 alt={image.alt}
-                className={clsx(step2img2Class)}
-                src={image.step4light}
+                className={clsx(step4img2Class)}
+                src={image.step4light2}
                 preset="fadeInScale"
                 delay={0.1}
               />

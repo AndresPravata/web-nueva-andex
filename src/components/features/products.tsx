@@ -107,19 +107,31 @@ export function Products() {
               "max-md:scale-[160%] max-md:rounded-[24px] rounded-[24px] left-[0%] top-[8%] md:left-[35px] md:top-[8%]",
               "md:group-hover:translate-y-2"
             )}
+            step3img2Class={cn(
+              "pointer-events-none hidden md:block w-[60%] border border-stone-100/10 dark:border-stone-700/50 transition-all duration-500 overflow-hidden",
+              "max-md:scale-[160%] rounded-2xl max-md:rounded-[24px] left-[69%] top-[53%] md:top-[7%] md:left-[calc(50%+35px+1rem)]",
+              "md:group-hover:-translate-y-6"
+            )}
             step4imgClass={cn(
               "pointer-events-none w-[80%] md:w-[50%] border border-stone-100/10 transition-all duration-500 dark:border-stone-700/50",
               "max-md:scale-[160%] max-md:rounded-[24px] rounded-[24px] left-[0%] top-[8%] md:left-[35px] md:top-[8%]",
               "md:group-hover:translate-y-2"
             )}
+            step4img2Class={cn(
+              "pointer-events-none hidden md:block w-[60%] border border-stone-100/10 dark:border-stone-700/50 transition-all duration-500 overflow-hidden",
+              "max-md:scale-[160%] rounded-2xl max-md:rounded-[24px] left-[69%] top-[53%] md:top-[7%] md:left-[calc(50%+35px+1rem)]",
+              "md:group-hover:-translate-y-6"
+            )}
             // Example images
             image={{
               step1light1: "/product1.png",
-              step1light2: "/product1.png",
-              step2light1: "/product2.png",
+              step1light2: "/turnero2.png",
+              step2light1: "/turnero1.png",
               step2light2: "/product2.png",
-              step3light: "/product3.png",
-              step4light: "/product4.png",
+              step3light: "/gastronomico.jpg",
+              step3light2: "/gastronomico.jpg",
+              step4light: "/verduleria.png",
+              step4light2: "/totem-verduleria.png",
               alt: "Feature demonstration",
             }}
             // Card styling
