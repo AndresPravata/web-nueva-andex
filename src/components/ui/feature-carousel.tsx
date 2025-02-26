@@ -584,7 +584,7 @@ function Steps({
                       <span
                         className={cn(
                           "text-xs",
-                          !isCurrent && "text-[#C6EA7E]"
+                          !isCurrent && "text-yellow-400"
                         )}
                       >
                         {stepIdx + 1}
@@ -597,7 +597,7 @@ function Steps({
                     className={clsx(
                       "text-sm font-medium duration-300",
                       isCompleted && "text-muted-foreground",
-                      isCurrent && "text-lime-300 dark:text-lime-500",
+                      isCurrent && "text-lime-300 dark:text-yellow-500",
                       isFuture && "text-neutral-500"
                     )}
                   >
@@ -647,10 +647,23 @@ export function FeatureCarousel({
   const [isAnimating, setIsAnimating] = useState(false);
 
   const handleIncrement = () => {
-    if (isAnimating) return;
+    if (isAnimating) {
+      // Force reset isAnimating if it's stuck
+      setTimeout(() => setIsAnimating(false), 300);
+      return;
+    }
     setIsAnimating(true);
     increment();
   };
+
+  // Add cleanup effect for isAnimating
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsAnimating(false);
+    }, 500); // Timeout slightly longer than animation duration
+
+    return () => clearTimeout(timer);
+  }, [step]);
 
   const handleAnimationComplete = () => {
     setIsAnimating(false);
@@ -749,15 +762,13 @@ export function FeatureCarousel({
            */
           return (
             <motion.div
-              className={clsx(
-                "absolute left-2/4 top-1/3 flex w-[100%] -translate-x-1/2 -translate-y-[33%] flex-col gap-12 text-center text-2xl font-bold md:w-[60%]"
-              )}
+              className="relative w-full h-full"
               {...ANIMATION_PRESETS.fadeInScale}
               onAnimationComplete={handleAnimationComplete}
             >
               <AnimatedStepImage
                 alt={image.alt}
-                className="pointer-events-none top-[50%] w-[90%] overflow-hidden rounded-2xl border border-neutral-100/10 md:left-[35px] md:top-[30%] md:w-full dark:border-zinc-700"
+                className={clsx(step4imgClass)}
                 src={image.step4light}
                 preset="fadeInScale"
                 delay={0.1}
