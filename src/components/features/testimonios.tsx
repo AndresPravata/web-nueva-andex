@@ -30,7 +30,7 @@ const testimonials = [
   },
   {
     quote:
-      "Tuve el privilegio de acompañar a los fundadores de Andextech en su etapa de gestación, donde contruyeron una empresa basada en valores y profesionalismo. Andextech se distingue por su inquebrantable compromiso con la excelencia, con una mirada siempre puesta en la innovación, orientada a satisfacer las necesidades específicas de cada cliente, integrando responsabilidad y creatividad en cada proyecto.",
+      "Tuve el privilegio de acompañar a los fundadores de Andextech en su gestación, donde construyeron una empresa basada en valores y profesionalismo. Andextech se destaca por su compromiso con la excelencia, la innovación y la satisfacción del cliente, integrando responsabilidad y creatividad en cada proyecto.",
     name: "Juan Pablo Bustos",
     title: "Profesor de la UNCUYO",
   },
