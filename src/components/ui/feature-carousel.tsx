@@ -252,7 +252,7 @@ interface AnimatedStepImageProps extends StepImageProps {
  */
 function useNumberCycler(
   totalSteps: number = TOTAL_STEPS,
-  interval: number = 100000
+  interval: number = 10000
 ) {
   const [currentNumber, setCurrentNumber] = useState(0);
   const [isManualInteraction, setIsManualInteraction] = useState(false);
